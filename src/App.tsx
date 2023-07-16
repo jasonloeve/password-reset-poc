@@ -1,5 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Input } from './components';
+import { validatePassword } from './utils';
 import './App.css';
 
 const App: React.FC = () => {
@@ -9,8 +10,10 @@ const App: React.FC = () => {
     const { value } = target;
     setPassword(value);
 
+    const isValidPassword: boolean = validatePassword(value);
+
     // Debug
-    console.log(value);
+    console.log(isValidPassword);
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
