@@ -1,0 +1,15 @@
+.Message {
+  color: rgb(0, 0, 0);
+}
+
+.Message.Message--Success {
+  color: rgb(0, 176, 114);
+}
+
+.Message.Message--Error {
+  color: rgb(176, 0, 32);
+}
+
+.Message.Message--Warning {}
+
+.Message.Message--Info {}

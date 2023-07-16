@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(243, 243, 243);
+  padding: 1.5rem;
+}
+
+.Container {
+  flex: 1;
+  max-width: 35rem;
+}
+
+.Card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(34, 34, 34, 0.15) 0 2px 10px;
+  padding: 2rem;
+}
+
+.Button-Group {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-start;
+}
