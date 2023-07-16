@@ -1,4 +1,5 @@
 import React, { ChangeEvent, useState } from 'react';
+import { Message } from '../Message/Message';
 import './Input.css';
 
 export interface InputFieldProps {
@@ -33,7 +34,7 @@ export const Input: React.FC<InputFieldProps> = ({label, type, value, helper, me
           value={inputValue}
           onChange={handleInputChange}
         />
-        {message && message}
+        {message && <Message type="Error" message={message} />}
         {helper && (
           <p className="Helper">
             <small>{helper}</small>
