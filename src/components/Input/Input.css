@@ -1,0 +1,30 @@
+label {
+  font-weight: 600;
+}
+
+input {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(97, 97, 97);
+  height: 3rem;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
+input:hover {
+  border-color: rgb(159, 69, 133);
+}
+
+input:focus {
+  box-shadow: rgb(41, 126, 243) 0 0 6px;
+  border-color: rgb(41, 126, 243);
+  outline: none;
+}
+
+.Helper {
+  color: rgb(136, 136, 136);
+}

@@ -1,0 +1,45 @@
+.Button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(218, 23, 16);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease-out 0s;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+  border: 0;
+  border-radius: 62.5rem;
+  box-shadow: none;
+  min-width: 120px;
+  padding: 0.75rem 1.5rem;
+}
+
+.Button:active,
+.Button:hover {
+  background-color: rgb(159, 69, 133);
+  color: rgb(255, 255, 255);
+}
+
+.Button.Button--Primary {
+  color: rgb(255, 255, 255);
+  background-color: rgb(84, 30, 75);
+}
+
+.Button.Button--Primary:active,
+.Button.Button--Primary:hover {
+  background-color: rgb(159, 69, 133);
+  color: rgb(255, 255, 255);
+}
+
+.Button:disabled,
+.Button:disabled:active,
+.Button:disabled:hover {
+  cursor: not-allowed;
+  background-color: rgb(217, 217, 217);
+  color: rgb(0, 0, 0);
+}
