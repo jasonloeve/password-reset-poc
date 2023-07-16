@@ -1,3 +1,20 @@
+/**
+ * Reset Password Component
+ *
+ * This component renders a form to reset the user's password. It includes an input field for entering the new password,
+ * a submit button, and a message component to display success or error messages. The password entered is validated
+ * against requested criteria, and appropriate messages are displayed accordingly.
+ *
+ * TODO:
+ * - Consider internationalization of hardcoded content such as titles, labels, and messages.
+ * - Refactor the form into a reusable component.
+ * - Refactor the card into a reusable component.
+ * - Optimize the code by combining password states into a single state object.
+ * - Move the code to its own page component, e.g., pages/Account/Reset.tsx.
+ * - Add functionality to unhide password in the Input component.
+ * - Add functionality to include a helper popup in the Input component (The current helper text is slightly long).
+ */
+
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Input, Button, Message } from './components';
 import { validatePassword } from './utils';
