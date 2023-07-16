@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import './Button.css';
 
-export const Button: React.FC = () => {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  // Additional props if needed
+}
+
+export const Button: React.FC<ButtonProps> = ({ children, className, ...rest }) => {
+  const buttonClasses = `Button ${className}`;
+
   return (
-    <>
-      Button
-    </>
+    <button className={buttonClasses} {...rest}>
+      {children}
+    </button>
   );
 };
