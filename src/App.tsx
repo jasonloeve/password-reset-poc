@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
-import { Input, Message } from './components';
+import { Input, Button, Message } from './components';
 import { validatePassword } from './utils';
 import './App.css';
 
@@ -25,7 +25,7 @@ const App: React.FC = () => {
     }
 
     // Debug
-    console.log(isValidPassword);
+    // console.log(isValid);
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
@@ -45,8 +45,8 @@ const App: React.FC = () => {
     setErrorMessage('');
 
     // Debug
-    console.log('Catch Submit')
-  }
+    // console.log('Form submitted');
+  };
 
   return (
     <div className="App">
@@ -67,11 +67,15 @@ const App: React.FC = () => {
               />
             )}
           </div>
-          <button type="submit">Reset</button>
+          <div className="Button-Group">
+            <Button className="Button Button--Primary" type="submit" disabled={!isValid}>
+              <span>Reset password</span>
+            </Button>
+          </div>
         </form>
       </div>
     </div>
   );
-}
+};
 
 export default App;
